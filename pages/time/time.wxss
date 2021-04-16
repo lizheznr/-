@@ -1,0 +1,75 @@
+/* pages/time/time.wxss */
+.modal-box{
+  position:fixed;
+  width:100%;
+  height:100%;
+  top:0px;
+  background:rgba(0,0,0,0.4);
+  overflow: hidden;
+  }
+ 
+.modal-body{
+  position:relative;
+  }
+ 
+.modal-content{
+  /* width: 60%; */
+  margin:0 10% 0 30%;
+  overflow: hidden;
+  border-radius: 10rpx;
+  }
+ 
+.modal-content{
+  width: 60%;
+  height:150px; 
+  margin:377rpx 154rpx;
+}
+.modal-content .fenxiang{
+  width: 100%;
+  height: 40%;
+}
+
+/*选择器  */
+.section__title{
+  margin-bottom: 20rpx;
+}
+.section{
+  height: 141rpx;
+  background-color: #fff;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: left;
+  /* border: 2rpx solid rgba(230, 229, 229, 0.808); */
+  font-size: 40rpx;
+  padding-left: 42rpx;
+  background-color: rgb(87,172,232);
+  position: relative;
+  width: 100%;
+
+  }
+
+  
+  .loginBtn::after{
+    border: none; 
+  }
+  .loginBtn{
+    border-radius: 4rpx;  
+    width: 150rpx;
+    height: 116rpx;
+    margin-left: 597rpx;
+    border:none;
+    text-align: center;
+    position: relative;
+  }
+
+  .shuru{
+    width: 504rpx;
+    height: 114rpx;
+    background-color:rgb(255,255,255) ;
+    position: absolute;
+    text-align: center;
+  
+  }
+
+

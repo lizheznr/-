@@ -1,0 +1,4 @@
+<!--pages/_1/_1.wxml-->
+
+<!-- <image mode="widthFix" src="/icon/养生常识.png"></image> -->
+<web-view src="https://mp.weixin.qq.com/s?__biz=MzkzNjIyNDYzMQ==&mid=2247483654&idx=1&sn=d0500388901743a32eae40debf719ee3&chksm=c2a0b31ef5d73a08fb703c53f57af8ef90d635ef731175060fc57b81ab577d2847a2210a3a90&mpshare=1&scene=23&srcid=0322fVOA0G4UDE6S3Ol4FG3p&sharer_sharetime=1616402181615&sharer_shareid=6a3a86b689f6c7d2a79843e6f4eab798#rd"></web-view>

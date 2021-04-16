@@ -1,0 +1,18 @@
+<!--pages/bdq/bdq.wxml-->
+<view class="bdq">
+  <image class="xin" src="https://wx2.sinaimg.cn/mw690/006P6Ah5ly1gkba4lzid7j313w0u0dvh.jpg"></image>
+</view>
+<view class="nc">你的手机号</view>
+<!-- 分割线 -->
+<view class="container">
+  <view class="divLine"></view>
+</view>
+<view class="itemView">
+    <input class="input" name="userName" placeholder="请输入手机号" 
+    bindinput="iphonenumberInput"/>
+    <view class="input-text">微信绑定账号</view>
+  </view>
+  <view class="viewName">
+  <button type="primary" class="loginBtn" bindtap="loginBtnClick">允许</button>
+  <button type="default" class="resetBtn" bindtap="resetBtnClick">拒绝</button>
+  </view>

@@ -1,0 +1,79 @@
+<!--pages/ybd/ybd.wxml-->
+<view class='content'>
+  <view class='nav'>
+    <view class='top'>
+      <text>gygyfi hiho wetew</text>
+    </view>
+    <view class="tianjia">
+      <image class="iconfont icon-yuan"></image>
+    </view>
+  </view>
+    <view class='item'>
+      <input class="input" name="realName" value="{{realName}}" disabled="ture"
+    bindinput="realName"/>
+    <text class='right'>></text>
+  </view>
+  <view class="container">
+  <view class="divLine"></view>
+</view>
+    <view class='item'>身份证号:
+      <input class="input" name="idNo" value="{{idNo}}" disabled="ture"
+    bindinput="idNo"/>
+    <text class='right'>></text>
+    </view>
+    <view class="container">
+  <view class="divLine"></view>
+</view>
+
+
+    <view class='item'>我的亲属:
+      <input class="input" name="family" 
+    bindinput="family" value="{{family}}" disabled="ture"/>
+    <text class='right'>></text>
+    </view>
+    <view class="container">
+  <view class="divLine"></view>
+</view>
+    <view class='item'>床号:{{realame}}
+      <input class="input" name="bedNo" placeholder="" 
+    bindinput="bedNo" value="{{bedNo}}" disabled="ture"/>
+    <text class='right'>></text>
+    </view>
+    <view class="container">
+  <view class="divLine"></view>
+</view>
+    <view class='item'>入院时间:
+      <input class="input" name="beginTime" placeholder="" 
+    bindinput="beginTime" value="{{beginTime}}" disabled="ture" />
+    <text class='right'>></text>
+    </view>
+    <view class="container">
+  <view class="divLine"></view>
+</view>
+    <view class='item'>身体状况:
+      <input class="input" name="statu" placeholder="" 
+    bindinput="statu" value="{{state}}" disabled="ture"/>
+    <text class='right'>></text>
+    </view>
+    <view class="container">
+  <view class="divLine"></view>
+</view>
+    <view class='item'>编号:
+      <input class="input" name="num" placeholder="" 
+    bindinput="num" value="{{num}}" disabled="ture"/>
+    <text class='right'>></text>
+    </view>
+    <view class="container">
+  <view class="divLine"></view>
+</view>
+    <view class='item'>到期时间:
+      <input class="input" name="endTime" placeholder="" 
+    bindinput="endTime" value="{{endTime}}" disabled="ture"/>
+    <text class='right'>></text>
+    </view>
+    <view class="container">
+  <view class="divLine"></view>
+</view>
+</view>
+
+

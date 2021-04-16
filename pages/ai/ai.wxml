@@ -1,0 +1,34 @@
+<!--pages/ai/ai.wxml-->
+<view class="navbar">
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+</view>
+ 
+<!--首页-->
+<view hidden="{{currentTab!==0}}">
+  <view class="page-body">
+  <view class="page-body-wrapper">
+    <camera device-position="front" flash="off" binderror="error" style="width:100%;height:{{windowWidth}}px;"></camera>
+    <!-- <video direction="0" src="https://hls01open.ys7.com/openlive/2969101a822d421599b4132d41bd5582.m3u8" controls="true" objectFit="cover" autoplay :show-fullscreen-btn="false" :show-play-btn="false"> </video> -->
+    <canvas wx:if="{{canvasshow}}" style="width: 100%;height:{{windowWidth}}px;position:absolute;" canvas-id="canvas"></canvas>
+    <view class="btn-area">
+      <button type="primary" bindtap="track" style='background-color:#31859c;' data-trackshow="{{trackshow}}">{{trackshow}}</button>
+    </view>
+  </view>
+</view>
+
+  </view>
+<view hidden="{{currentTab!==1}}">
+  <view class="page-body">
+  <view class="page-body-wrapper">
+    <!-- <camera device-position="front" flash="off" binderror="error" style="width:100%;height:{{windowWidth}}px;"></camera> -->
+    <video direction="0" src="https://hls01open.ys7.com/openlive/2969101a822d421599b4132d41bd5582.m3u8" controls="true" objectFit="cover" autoplay :show-fullscreen-btn="false" :show-play-btn="false"> </video>
+    <canvas wx:if="{{canvasshow1}}" style="width: 100%;height:{{windowWidth}}px;position:absolute;" canvas-id="canvas"></canvas>
+    <view class="btn-area1">
+      <button type="primary" bindtap="track1" style='background-color:#31859c;' data-trackshow="{{trackshow1}}">{{trackshow1}}</button>
+    </view>
+  </view>
+</view>
+</view>
+
+
+

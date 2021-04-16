@@ -1,0 +1,23 @@
+/* pages/search/search.wxss */
+.guancha{
+  height: calc(750rpx * 500 /320);
+  width: 100%;
+  /* padding-top: 100px;  */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bangding{
+  height: calc(750rpx * 100 /320);
+  width: 80%;
+  border-radius: calc(750rpx * 10 /320);
+  box-shadow:5px 3px rgb(228, 229, 230);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:rgb(236, 239, 241);
+}
+.bds{
+  background-color:rgb(236, 239, 241) ;
+}
+.bds:after{ border: none; }

@@ -1,0 +1,51 @@
+<!--pages/time/time.wxml-->
+ 
+<!-- 弹出层内容，其中的“我知道”中绑定让弹出层消失的函数：bindtap="hide" -->
+<view class="modal-box" hidden="{{flag}}" bindtap="hide">
+ 
+    <view class="modal-body">
+ 
+      <view class="modal-content">
+ 
+        <button class="knowBtn" bindtap="hide" style='margin:100rpx auto'>定位成功</button>
+     </view>
+    </view>
+  </view>
+
+
+    <map 
+    id="map" 
+    longitude='{{longitude}}' 
+    latitude='{{latitude}}'
+    scale="16"
+    controls="{{controls}}"
+    bindcontroltap="controltap"
+    markers="{{markers}}"
+    bindmarkertap="markertap"
+    bindregionchange="regionchange"
+    callout="callout"
+    bindcallouttap = "bindcallouttap"
+    show-location
+    style="width: 100%;height: 386px;">
+    </map>
+    	 
+    <view>
+      <input  class="shuru" bindinput='getInputValue'  name='price' type='text' placeholder='输入当前地址'></input>
+      <button class="loginBtn" bindtap="handleBtn">确定</button>
+    </view>
+
+     <!--选择器-->
+     <view class="section">
+      <picker bindchange="bindPickerChange" data-id='0'value="{{index}}" range="{{array}}">
+        <view class="picker">
+          服务时间及费用：{{array[index]}}
+        </view>
+      </picker>
+    </view>
+
+   
+
+
+
+
+

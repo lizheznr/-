@@ -1,0 +1,52 @@
+<!--pages/user/user.wxml-->
+<view class="mine-wrapper">
+  <view class="avatar-wrapper">
+    <image mode="heightFit" class='bktp' src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1705441396,2372895503&fm=26&gp=0.jpg"></image>
+      <!-- <view class="avatar">
+        <image style="border-radius:50%;" src="{{userinfo.avatarUrl ? userinfo.avatarUrl:'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1043007601,3955686175&fm=26&gp=0.jpg'}}"></image>
+      </view> -->
+      <view class="userinfo">
+          <!-- <button open-type="getUserInfo" bindgetuserinfo="auth" wx:if="{{showAuth}}">授权登录</button>
+          <block wx-else>
+            <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover" style="border-radius:50%;"></image>
+            <text class="userinfo-nickname">{{'\n'}}{{userInfo.nickName}}</text>
+          </block> -->
+          <block wx:if="{{!hasUserInfo}}">
+            <view class="text">
+        <view bindtap="toLogin">注册</view>
+            </view>
+           <view class='login' wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 登录 </view>
+      <!-- <button wx:else open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button> -->
+    </block>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover" style="border-radius:50%;"></image>
+      <text class="userinfo-nickname">{{'\n'}}{{userInfo.nickName}}</text>
+    </block>
+      </view>
+  
+</view>
+
+
+
+
+  <view class="list-wrapper">
+    <view class="alllists">
+      <block wx:for="{{menuitems}}" wx:key="menu_for">
+        <navigator url="{{item.url}}" class="lists">
+        <view class='content'>
+          <view class="listimg">
+            <image src="{{item.icon}}"></image>
+          </view>
+          <view class="listtext">{{item.text}}</view>
+          <view class="listicon">{{item.tips}}</view>
+          <view class="arrows">
+            <image src="{{item.arrows}}"></image>
+          </view>
+        </view>
+        </navigator>
+        <!-- 分割线 -->
+        <view class="divLine"></view>
+      </block>
+    </view>
+  </view>
+</view>

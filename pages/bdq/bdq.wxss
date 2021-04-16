@@ -1,0 +1,62 @@
+/* pages/bdq/bdq.wxss */
+.bdq{
+  height:calc(750rpx * 200 /320);
+  width:calc(750rpx * 320 /320);
+  display: flex;
+  padding-top: calc(750rpx * 50 /320);
+  padding-left:calc(750rpx * 40 /320);
+  padding-right:calc(750rpx * 20 /320);
+  padding-bottom: calc(750rpx * 40 /320);
+}
+.xin{
+  height:calc(750rpx * 160 /320);
+  width:calc(750rpx * 250 /320);
+}
+.nc{
+  height: calc(750rpx * 15 /320);
+  font-size: calc(750rpx * 15 /320);
+  width: calc(750rpx * 200 /320);
+  padding-right: calc(750rpx * 30 /320);
+  padding-left: calc(750rpx * 30 /320);
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  padding-top:  calc(750rpx * 5 /320);
+  padding-left:  calc(750rpx * 20 /320);
+  padding-right:calc(750rpx * 20 /320);
+  height: calc(750rpx * 1 /320);
+}
+.divLine{
+  background-color:gray;
+  width: 100%;
+  height:3rpx;
+}
+.itemView{
+  display: flex;
+}
+.input{
+  padding-left: calc(750rpx * 30 /320);
+  display: flex;
+  height:calc(750rpx * 20 /320);
+}
+.input-text{
+  font-size: 10px;
+  height: calc(750rpx * 20 /320);
+  color:rgb(197, 188, 188);
+  justify-content: flex-end;
+}
+.viewName{
+  display: flex;
+  padding-top: calc(750rpx * 20 /320);
+}
+.loginBtn{
+  height: calc(750rpx * 35 /320);
+  width:calc(750rpx * 70/320);
+  align-items: right;
+}
+.resetBtn{
+  height:calc(750rpx * 35 /320);
+  width:calc(750rpx * 70/320);
+  align-items: left;
+}

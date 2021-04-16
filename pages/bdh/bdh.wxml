@@ -1,0 +1,62 @@
+<view class="page1">
+  <image class='background' src="https://wx4.sinaimg.cn/mw690/006P6Ah5ly1gkb8otezgbj30u00v6kfj.jpg" mode="aspectFill">
+  </image>
+  <view class="form" >
+    <view class="bjcontent">
+      <view class="bjcontent1">
+        <view class='content'>
+
+          <view class="baikuang"></view>
+          <view class='item'>
+            <label>真实姓名:</label>
+            <input class="input" name="realName" bindinput="realName" />
+            <text class='right'>></text>
+          </view>
+          <view class='item'>
+            <label>身份证号码:</label>
+            <input class="input" name="idNo" bindinput="idNo" />
+            <text class='right'>></text>
+          </view>
+          <view class='item'>
+            <label>我的亲属:</label>
+            <input class="input" name="family" bindinput="family" />
+            <text class='right'>></text>
+          </view>
+          <view class='item'>
+            <label>床号:</label>
+            <input class="input" name="bedNo" bindinput="bedNo" />
+            <text class='right'>></text>
+          </view>
+          <view class='item'>
+            <label>入院时间:</label>
+            <picker mode="date" value="{{beginTime}}" bindchange="beginTime">
+              <input name="beginTime" value="{{beginTime}}" bindinput="beginTime" />
+            </picker>
+          </view>
+          <view class='item'>
+            <label>身体状况:</label>
+            <input class="input" name="state" bindinput="state" /><text class='right'>></text>
+          </view>
+          <view class='item'><label>
+            编号:</label>
+            <input class="input" name="num" bindinput="num" />
+            <text class='right'>></text>
+          </view>
+          <view class='item'>
+            <label>到期时间:</label>
+            <picker mode="date" value="{{endTime}}" bindchange="endTime">
+              <input name="endTime" value="{{endTime}}" bindinput="endTime" />
+            </picker>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="viewName" style="background-color:#fbf9fe">
+      <radio-group class="radio-group">
+        <radio color='#fff' class="radio" checked="{{checked}}" bindtap="radioChange"></radio>
+        <text class="radio_text" bindtap="clickAgreement">我已阅读并同意<text class="agree_paper">《养老院规则》</text></text>
+      </radio-group>
+      <button type="primary" class="loginBtn" bindtap="handleBtn">提交信息</button>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,18 @@
+<!--pages/yly/yly.wxml-->
+<view class="pay"> 
+  支付</view>
+<view class="imag">
+  <view class="imag_1">微信小程序订</view>
+  <view class="imag_2">单-202120842379827365929993842993</view>
+  <view class="imag_3">¥300.00</view>
+</view>
+<view class="border"></view>
+<view class="shoukuan">
+  <text class="shoukuan_1">收款方</text>
+  <text class="shoukuan_2">微信平台个体商户</text>
+</view>
+<view class="border"></view>
+<view class="wei"></view>
+<button class="bto" type="primary" bindtap="pay">立即支付</button>
+<view class="bottom"></view>
+<view class="b">支付安全由中国人民财产保险股份有限公司承保</view>

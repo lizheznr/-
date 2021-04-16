@@ -1,0 +1,120 @@
+<!--index.wxml-->
+<!--导航条-->
+<view class="navbar">
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+</view>
+ <!--lizhe-->
+<!--首页-->
+<view hidden="{{currentTab!==0}}">
+  <view>
+  <block wx:for="{{categoryList}}" wx:key="item">
+  <swiper-item>
+  <block wx:for="{{item}}" wx:key="item">
+    <view class="category-info">
+      <navigator url="{{item.url}}" open-type="navigate" hover-class="other-navigator-hover">
+        <image src="{{item.src}}" 
+        class="category-image"></image>
+        <view class="category-text">{{item.name}}</view>
+      </navigator>
+    </view>
+  </block>
+  <!--  -->
+  <view class="selection">
+  <view class="selection1">
+  <view class="header">
+    <navigator url="/pages/time/time">上门照料</navigator>
+    <text class="text-all">查看更多</text>
+  </view>
+  <!-- 分割线 -->
+  <view class="container">
+  <view class="divLine"></view>
+</view>
+<view class="header-1">
+  <text>住宿清洁。理发洗头</text>
+</view>
+<view class="header-2">
+  <text class="text-2">按小时收费。最低一小时</text>
+</view>
+<view class="container">
+  <view class="divLine"></view>
+</view>
+<view class="header-3">
+  <text>房间整理 衣物换洗</text>
+</view>
+</view>
+</view>
+<view class="tubiao">
+  <image src="https://wx1.sinaimg.cn/mw690/006P6Ah5ly1gkb8ntfbrhj30fk0f00t2.jpg"/>
+  健康指导
+</view>
+<view class="content">
+<view class="content1">
+  <view class="content-item1">
+    新冠肺炎
+    <image class="iconfont icon-xiantiao-" mode='aspectFill'></image>
+  </view>
+  <view class="content-item2">
+    热门话题
+    <image class="iconfont icon-xiantiao-" mode='aspectFill'></image>
+  </view>
+  <view class="content-item3">
+    测一测健康状况
+    <image class="iconfont icon-xiantiao-" mode='aspectFill'></image>
+  </view>
+  <view class="content-item4">
+    更多活动
+    <image class="iconfont icon-xiantiao-" mode='aspectFill'></image>
+  </view>
+</view>
+</view>
+  </swiper-item>
+  </block>
+</view>
+</view>
+ 
+<!-- 分类 -->
+
+<view hidden="{{currentTab!==1}}">
+  <view class="tj">  <!-- 列表推荐图 -->
+    <view class="list-item">
+         <image class="list-item-images"src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2764214006,3049493146&fm=11&gp=0.jpg"mode="widthFit"/>
+      <view class="list-item-text">
+      <text class="leirong">这里是内容这里是内容这里是内容这里是内容</text>
+      <button class="jishu" bindtap="jishu" hover-class="none">
+        <image mode="widthFix" class="iconfont icon-dianzan-copy">
+          <view class="count">{{index+1}}</view>
+        </image> 
+      </button>   
+    </view>
+    </view>
+  </view>
+<view class="tj-1"><!-- 列表推荐图 -->
+    <view class="list-item-1">
+         <image mode="widthFit" class="list-item-images-1"src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2158992676,3482386170&fm=26&gp=0.jpg"/>
+       <view class="list-item-text-1">
+        <text class="leirong">这里是内容这里是内容这里是内容这里是内容</text>
+      <button class="jishu1" bindtap="jishu1" hover-class="none">
+        <image mode="widthFix" class="iconfont icon-dianzan-copy">
+          <view class="count1">{{index1+1}}</view>
+        </image> 
+      </button>   
+      </view> 
+    </view>
+</view>
+<view class="tj-2"><!-- 列表推荐图 -->
+    <view class="list-item-2">
+         <image mode="widthFit"class="list-item-images-2"src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1605524199925&di=84e4ffe187a8c9529d7cab53d5626162&imgtype=0&src=http%3A%2F%2Fqcloud.dpfile.com%2Fpc%2FaqMszMTqpvFCP466m3LLlx_cPx0VpUK0sPHPBhgHTTtTHnprgj5JQnRdSUJp8DymjoJrvItByyS4HHaWdXyO_DrXIaWutJls2xCVbatkhjUNNiIYVnHvzugZCuBITtvjski7YaLlHpkrQUr5euoQrg.jpg"/>
+       <view class="list-item-text-2">
+        <text class="leirong">这里是内容这里是内容这里是内容这里是内容</text>
+      <button class="jishu2" bindtap="jishu2" hover-class="none">
+        <image mode="widthFix" class="iconfont icon-dianzan-copy">
+          <view class="count2">{{index2+1}}</view>
+        </image> 
+      </button>   
+      </view> 
+    </view>
+</view>
+</view>
+
+
+

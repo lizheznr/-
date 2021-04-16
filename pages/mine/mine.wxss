@@ -1,0 +1,79 @@
+/* pages/user/user.wxss */
+.page{
+  width: 100%;
+  height: 100%;
+}
+.avatar-wrapper {
+  height: 409.032rpx;
+  width: 100%;
+  overflow: hidden;
+  /* padding: 25px 0; */
+}
+.bktp{
+  width: 100%;
+  height: 409.032rpx;
+  display: flex;
+  align-items: flex-start;
+  position:fixed; 
+  background-size:100% 100%;
+  filter: blur(10rpx);
+  z-index: -1;
+}
+  .userinfo {
+    display: flex;
+    flex-direction: column;
+  padding-top: 100rpx;
+  text-align: center;
+  z-index: 1;
+}
+.login{
+  align-items: center; 
+  height: 100%;
+  flex: 1;
+}
+ .text {
+  /* padding-left: 100rpx; */
+  align-items: center; 
+  height: 100%;
+  flex: 1;
+}
+.userinfo text{
+  width: 80px;
+ height: 80px;
+ margin:0 auto;
+}
+.userinfo image {
+ width: 80px;
+ height: 80px;
+ margin:0 auto;
+}
+ 
+.listimg image {
+  margin-right: 5px;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+}
+ 
+.content{
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+ 
+/*分割线样式*/
+.divLine{
+ background: #E0E3DA;
+ width: 100%;
+ height: 5rpx;
+}
+ 
+.arrows image {
+  vertical-align: middle;
+  width: 15px;
+  height: 15px;
+  margin-left: 500rpx;
+}
+
+
+/* user.wxss */

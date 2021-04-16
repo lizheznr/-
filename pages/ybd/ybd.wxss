@@ -1,0 +1,118 @@
+/* pages/ybd/ybd.wxss */
+.content{
+  width:280px;
+  padding-left: 25px;
+  padding-right: 20px;
+  
+}
+.nav{
+  background-color: rgba(245, 244, 244, 0.986);
+  display: flex;
+
+}
+.top{
+width: 240px;
+height: 80px;
+padding-right: 50px;
+padding-top: 20px;
+margin: 0 auto;
+}
+.tianjia{
+  width: 50px;
+  height:80px;
+}
+.icon-yuan{
+  width: 60px;
+  height:80px;
+  padding-top: 20px;
+  font-size: 40px;
+  color:rgb(145, 109, 243);
+}
+/* .nickname{
+margin-bottom: 10rpx;
+text-align: center;
+} */
+.item{
+width: 350px;
+height: 70rpx;
+background-color: #fff;
+display: flex;
+border-radius: 20rpx;
+}
+.input{
+display: flex;
+justify-content: flex-start;
+flex-grow: 1;
+}
+.right{
+display: flex;
+justify-content: flex-end;
+flex-grow: 1;
+color: #ccc;
+margin-right: 20rpx;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  padding: 1rpx;
+  height: 11rpx;
+}
+.divLine{
+  background-color:rgb(214, 211, 211);
+  width: 100%;
+  height:3rpx;
+}
+.left1{
+  font-size: 10px;
+}
+.right1{
+  color: green;
+  font-size: 10px;
+}
+.tabber{
+  height: 40px;
+  width: 320px;
+  padding-top: 15px;
+  display: flex;
+}
+.tabber-x{
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3rpx solid #3b3939;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.tabber-1{
+  height: 50px;
+  width: 105px;
+  text-align: center;
+  font-size: 10px;
+}
+.tabber-1 image{
+    height: 40px;
+    width: 105px;
+
+}
+.tabber-2{
+  height: 50px;
+  width: 105px;
+  text-align: center;
+  font-size: 10px;
+}
+.tabber-2 image{
+  height: 40px;
+    width: 105px;
+}
+.tabber-3{
+  height: 50px;
+  width: 110px;
+  text-align: center;
+  font-size: 10px;
+}
+.tabber-3 image{
+  height: 40px;
+  width: 110px;
+}

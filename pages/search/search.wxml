@@ -1,0 +1,16 @@
+<!--pages/search/search.wxml-->
+<view class="guancha">
+  <view class="bangding">
+    <!-- <button open-type="getUserInfo" bindgetuserinfo="auth" wx:if="{{showAuth}}" class="bds" >点击绑定</button> -->
+    <!-- <block wx-else>
+      <view class="nickname" bindtap="sss">{{userinfo.userName}}</view>
+    </block> -->
+    <block wx:if="{{!hasUserInfo}}">
+      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile" class="bds"> 点击绑定 </button>
+      <button wx:else open-type="getUserInfo" bindgetuserinfo="getUserInfo" class="bds"> 点击绑定 </button>
+    </block>
+    <block wx:else>
+      <text class="nickname" bindtap="sss">{{userInfo.nickName}}</text>
+    </block>
+</view>
+</view>
